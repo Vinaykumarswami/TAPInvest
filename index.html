@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+<header>
+    <h1>🏃‍♂️ Fitness Tracker Dashboard</h1>
+  </header>
+
+  <div class="buttons">
+    <button class="start" onclick="startWorkout()">Start Workout</button>
+    <button class="stop" onclick="stopWorkout()">Stop Workout</button>
+  </div>
+
+  <div class="status-box">
+    <p><strong>Location:</strong> <span id="location">Not tracked</span></p>
+    <p><strong>Location Name:</strong> <span id="locationName">-</span></p>
+    <p><strong>Tracking Status:</strong> <span id="tracking">Inactive</span></p>
+    <p><strong>Network:</strong> <span id="network">Checking...</span></p>
+  </div>
+
+  <div id="map"></div>
+
+  <div id="log">
+    <p><em>Log will appear here...</em></p>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="index.js"></script>
+  </body>
+</html> 
